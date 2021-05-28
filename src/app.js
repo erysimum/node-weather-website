@@ -6,6 +6,7 @@ const request = require('request');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
+const port = process.env.PORT || 4567;
 //configure Path in Express
 const accessPublicFolder = path.join(__dirname, '../public');
 const accessViewsFolder = path.join(__dirname, '../templates/views');
@@ -98,6 +99,6 @@ app.get('/about', (req, res) => {
   res.send('<h2><strong> About Us<strong><h2>');
 });
 
-app.listen(4567, () => {
-  console.log('server is up and runing on port 4567');
+app.listen(port, () => {
+  console.log('server is up and runing on port ' + port);
 });
