@@ -1,11 +1,3 @@
-console.log('Cuurently euning in app.js file');
-
-// fetch('http://puzzle.mead.io/puzzle').then((response) => {
-//   response.json().then((Obj) => {
-//     console.log(Obj);
-//   });
-// });
-
 const form = document.querySelector('form');
 const searchTerm = document.querySelector('input');
 const messagezero = document.querySelector('#messagezero');
